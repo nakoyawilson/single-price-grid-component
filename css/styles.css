@@ -140,3 +140,29 @@ footer {
 .attribution a:hover {
   text-decoration: underline;
 }
+
+/* Media Queries */
+@media screen and (max-width: 500px) {
+  main {
+    width: 320px;
+    margin: 5rem 0;
+  }
+
+  .top-content {
+    padding: 1.5rem;
+  }
+
+  .join-paragraph {
+    font-size: 0.85rem;
+  }
+
+  .bottom-content {
+    flex-direction: column;
+  }
+
+  .subscription,
+  .why {
+    width: 100%;
+    padding: 1.5rem;
+  }
+}
