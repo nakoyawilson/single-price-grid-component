@@ -20,43 +20,43 @@ body {
   background-color: var(--light-gray);
   color: var(--color-white);
   font-family: "Karla", sans-serif;
-  font-size: 16px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 100vh;
+  font-size: 1rem;
   line-height: 1.6;
 }
 
 main {
-  width: 40.5rem;
-  margin: auto;
+  width: min(83%, 39.75rem);
+  margin: 10.25rem auto;
 }
 
 .main-container {
   display: flex;
   flex-direction: column;
-  border-radius: 10px;
+  border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 }
 
+.top-content,
+.subscription,
+.why {
+  padding: 2.075rem 2.5rem 2.5rem;
+}
+
 .top-content {
   background-color: var(--color-white);
-  padding: 2.5rem;
 }
 
 .join-heading {
   color: var(--color-cyan);
   font-size: 1.5rem;
-  padding-bottom: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 .join-subheading {
   color: var(--bright-yellow);
   font-size: 1.1rem;
-  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .join-paragraph {
@@ -75,13 +75,12 @@ main {
 .subscription {
   background-color: var(--color-cyan);
   width: 50%;
-  padding: 2.5rem;
 }
 
 .price {
   display: flex;
   align-items: center;
-  padding: 0.5rem 0 0.2rem;
+  padding: 0.5rem 0 0;
 }
 
 .number {
@@ -93,26 +92,30 @@ main {
 .words {
   font-weight: 400;
   color: var(--light-gray);
+  opacity: 0.6;
+  letter-spacing: 0.02em;
 }
 
 .subscription-paragraph {
-  padding-bottom: 1.25rem;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.015em;
 }
 
-button {
+.sign-up {
+  display: block;
   background-color: var(--bright-yellow);
   color: var(--color-white);
-  width: 100%;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
-  border: none;
   border-radius: 5px;
-  padding: 1rem 0;
+  padding: 0.75rem 0;
   font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
 }
 
 .why {
   background-color: var(--lighter-cyan);
-  padding: 2.5rem;
   width: 50%;
 }
 
@@ -121,6 +124,7 @@ ul {
   list-style-type: none;
   color: var(--light-gray);
   font-size: 0.85rem;
+  line-height: 1.5;
 }
 
 /* Footer Section */
@@ -145,8 +149,7 @@ footer {
 /* Media Queries */
 @media screen and (max-width: 700px) {
   main {
-    width: min(90%, 320px);
-    margin: 5rem 0;
+    margin: 4.5rem auto;
   }
 
   .top-content {
